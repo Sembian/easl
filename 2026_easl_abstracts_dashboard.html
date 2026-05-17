@@ -127,6 +127,110 @@ button .btn-icon{font-size:14px;line-height:1}.quick{display:flex;flex-wrap:wrap
 .tw-theme-card .ref-pot{margin-left:auto;background:#EEF3FB;color:#173B70;font-size:10px;font-weight:800;padding:1px 7px;border-radius:999px;flex-shrink:0}
 .tw-theme-card .ref-empty{font-size:12px;color:#64748B;font-style:italic;margin:0}
 .tw-theme-card .ref-header{font-size:10px;font-weight:800;color:#475569;text-transform:uppercase;letter-spacing:.5px;border-top:1px solid #E2E8F0;padding-top:8px;margin-top:auto}
+.tw-theme-card .theme-coverage{margin:2px 0 0}
+.tw-theme-card .theme-cov-bar-bg{height:5px;background:#EEF2F7;border-radius:999px;overflow:hidden}
+.tw-theme-card .theme-cov-bar{height:100%;background:linear-gradient(90deg,#0066F5,#6D28D9);border-radius:999px;transition:width .35s ease}
+.tw-theme-card .theme-cov-label{font-size:10px;font-weight:800;color:#475569;margin-top:4px;text-transform:uppercase;letter-spacing:.3px;display:flex;justify-content:space-between;align-items:center}
+.tw-theme-card.flash{outline:3px solid #0066F5;outline-offset:2px}
+/* ===== Strategic Anchors → Abstract Evidence Map ===== */
+.anchor-evidence-section{margin-bottom:24px;display:flex;flex-direction:column;gap:14px}
+.anchor-block{border:1px solid;border-radius:16px;padding:14px 16px;box-shadow:0 1px 3px rgba(7,29,73,.04)}
+.anchor-block-head{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.anchor-block-icon{font-size:20px;line-height:1}
+.anchor-block-head h3{margin:0;font-size:15px;font-weight:800;flex:1;line-height:1.3}
+.anchor-block-meta{font-size:11px;color:#475569;font-weight:700;background:#fff;padding:3px 10px;border-radius:999px;border:1px solid #E2E8F0}
+.anchor-block-totals{font-size:11px;color:#475569;font-weight:600}
+.anchor-block-totals strong{color:#071D49;font-weight:800}
+.anchor-list{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:1100px){.anchor-list.cols-2{grid-template-columns:1fr 1fr}}
+.anchor-item{background:#fff;border:1px solid #E2E8F0;border-radius:12px;padding:11px 13px;display:flex;flex-direction:column;gap:7px;transition:border-color .15s ease,box-shadow .15s ease}
+.anchor-item:hover{border-color:#93C5FD;box-shadow:0 4px 10px rgba(7,29,73,.08)}
+.anchor-item-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.anchor-item-text{font-size:12px;font-weight:600;color:#1F2937;line-height:1.5;flex:1;min-width:0}
+.anchor-item-stat{display:flex;flex-direction:column;align-items:flex-end;gap:1px;flex-shrink:0;text-align:right}
+.anchor-count{font-size:20px;font-weight:900;color:#071D49;line-height:1;font-variant-numeric:tabular-nums}
+.anchor-pct{font-size:9px;font-weight:800;color:#64748B;text-transform:uppercase;letter-spacing:.4px;white-space:nowrap}
+.anchor-bar-bg{height:6px;background:#F1F5F9;border-radius:999px;overflow:hidden}
+.anchor-bar{height:100%;border-radius:999px;transition:width .35s ease}
+.anchor-bar.bar-blue{background:linear-gradient(90deg,#0066F5,#1D4ED8)}
+.anchor-bar.bar-emerald{background:linear-gradient(90deg,#10B981,#047857)}
+.anchor-bar.bar-amber{background:linear-gradient(90deg,#F59E0B,#D97706)}
+.anchor-bar.bar-purple{background:linear-gradient(90deg,#8B5CF6,#6D28D9)}
+.anchor-bar.bar-slate{background:linear-gradient(90deg,#94A3B8,#475569)}
+.anchor-details{margin:0}
+.anchor-details > summary{cursor:pointer;font-size:11px;font-weight:800;color:#0066F5;padding:3px 0;list-style:revert;user-select:none;display:inline-flex;align-items:center;gap:5px}
+.anchor-details > summary:hover{color:#173B70}
+.anchor-details[open] > summary{margin-bottom:6px}
+.anchor-ref-list{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:4px;border-top:1px dashed #E2E8F0;padding-top:7px}
+.anchor-ref-list li{font-size:11px;line-height:1.5;display:flex;gap:7px;align-items:flex-start;padding:3px 6px;border-radius:6px;transition:background .15s ease}
+.anchor-ref-list li:hover{background:#F8FAFC}
+.anchor-ref-list a.abs-link{color:#0066F5;font-weight:800;text-decoration:none;flex-shrink:0;min-width:64px;font-variant-numeric:tabular-nums}
+.anchor-ref-list a.abs-link:hover{text-decoration:underline;color:#173B70}
+.anchor-ref-list .ref-title{color:#475569;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis}
+.anchor-ref-list .ref-pot{margin-left:auto;background:#EEF3FB;color:#173B70;font-size:9px;font-weight:800;padding:1px 7px;border-radius:999px;flex-shrink:0;white-space:nowrap}
+.anchor-ref-list .ref-grp{font-size:9px;font-weight:800;padding:1px 6px;border-radius:999px;flex-shrink:0;white-space:nowrap;color:#fff}
+.anchor-ref-list .ref-grp.high{background:#4C8F57}
+.anchor-ref-list .ref-grp.medium{background:#0066F5}
+.anchor-ref-list .ref-grp.supportive{background:#D97706}
+.anchor-ref-list .ref-grp.low{background:#6B7280}
+.anchor-empty{font-size:11px;color:#94A3B8;font-style:italic;margin:4px 0 0}
+.anchor-block.tone-blue{background:#EFF6FF;border-color:#BFDBFE}
+.anchor-block.tone-blue .anchor-block-head h3{color:#1D4ED8}
+.anchor-block.tone-emerald{background:#ECFDF5;border-color:#A7F3D0}
+.anchor-block.tone-emerald .anchor-block-head h3{color:#047857}
+.anchor-block.tone-amber{background:#FFFBEB;border-color:#FDE68A}
+.anchor-block.tone-amber .anchor-block-head h3{color:#92400E}
+.anchor-block.tone-purple{background:#F5F3FF;border-color:#DDD6FE}
+.anchor-block.tone-purple .anchor-block-head h3{color:#6D28D9}
+.anchor-block.tone-slate{background:#F8FAFC;border-color:#CBD5E1}
+.anchor-block.tone-slate .anchor-block-head h3{color:#334155}
+/* ===== Inline anchor badges + popover ===== */
+.anchor-inline-badge-wrap{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.anchor-inline-badge{display:inline-flex;align-items:center;gap:5px;background:#0066F5;color:#fff;border:none;border-radius:999px;padding:3px 10px 3px 4px;font-family:'Roboto',sans-serif;font-size:10px;font-weight:700;cursor:pointer;line-height:1.3;letter-spacing:.02em;box-shadow:0 1px 2px rgba(7,29,73,.2);transition:transform .12s ease,box-shadow .15s ease,background .15s ease;white-space:nowrap}
+.anchor-inline-badge:hover{background:#173B70;transform:translateY(-1px);box-shadow:0 3px 8px rgba(7,29,73,.3)}
+.anchor-inline-badge:focus{outline:2px solid #93C5FD;outline-offset:2px}
+.anchor-inline-badge .ab-count{background:#fff;color:#0066F5;border-radius:999px;padding:1px 7px;font-weight:900;font-size:10px;font-variant-numeric:tabular-nums;min-width:18px;text-align:center}
+.anchor-inline-badge .ab-text{font-size:9px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.anchor-inline-badge .ab-arrow{font-size:8px;opacity:.85;margin-left:1px}
+.anchor-inline-badge.tone-amber{background:#D97706}
+.anchor-inline-badge.tone-amber:hover{background:#92400E}
+.anchor-inline-badge.tone-amber .ab-count{color:#92400E}
+.anchor-inline-badge.tone-purple{background:#6D28D9}
+.anchor-inline-badge.tone-purple:hover{background:#4C1D95}
+.anchor-inline-badge.tone-purple .ab-count{color:#6D28D9}
+.anchor-inline-badge.tone-emerald{background:#047857}
+.anchor-inline-badge.tone-emerald:hover{background:#065F46}
+.anchor-inline-badge.tone-emerald .ab-count{color:#047857}
+.anchor-inline-badge.tone-slate{background:#475569}
+.anchor-inline-badge.tone-slate:hover{background:#1E293B}
+.anchor-inline-badge.tone-slate .ab-count{color:#475569}
+.anchor-inline-badge.is-empty{background:#94A3B8;cursor:default}
+.anchor-inline-badge.is-empty:hover{background:#94A3B8;transform:none;box-shadow:0 1px 2px rgba(7,29,73,.2)}
+.anchor-inline-badge.is-empty .ab-count{color:#475569}
+.anchor-popover{position:absolute;z-index:200;background:#fff;border:1px solid #CBD5E1;border-radius:14px;box-shadow:0 22px 50px rgba(7,29,73,.28),0 6px 18px rgba(7,29,73,.10);padding:0;width:min(480px,calc(100vw - 16px));max-height:72vh;overflow:auto;font-family:'Roboto',sans-serif;animation:apFade .15s ease}
+@keyframes apFade{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.anchor-popover .ap-head{display:flex;align-items:center;gap:10px;background:linear-gradient(135deg,#071D49,#0F2D6B);color:#fff;padding:10px 14px;border-top-left-radius:14px;border-top-right-radius:14px;position:sticky;top:0;z-index:1}
+.anchor-popover .ap-label{font-size:13px;font-weight:800;flex:1;line-height:1.3}
+.anchor-popover .ap-meta{font-size:10px;font-weight:800;background:rgba(255,255,255,.18);padding:3px 9px;border-radius:999px;white-space:nowrap}
+.anchor-popover .ap-close{background:transparent;border:none;color:#fff;font-size:22px;cursor:pointer;padding:0 4px;line-height:1;font-weight:300}
+.anchor-popover .ap-close:hover{color:#FCA5A5}
+.anchor-popover .ap-themes{padding:8px 14px;font-size:10px;font-weight:700;color:#475569;border-bottom:1px solid #EEF2F7;display:flex;flex-wrap:wrap;gap:5px;align-items:center;background:#F8FAFC}
+.anchor-popover .ap-themes-label{font-size:9px;font-weight:800;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;margin-right:3px}
+.anchor-popover .ap-theme-pill{background:#fff;color:#173B70;border:1px solid #D8E3F5;border-radius:999px;padding:2px 8px;font-size:10px;font-weight:700}
+.anchor-popover .ap-list{margin:0;padding:8px;list-style:none;display:flex;flex-direction:column;gap:2px}
+.anchor-popover .ap-list li{display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:8px;font-size:11px;line-height:1.4;transition:background .12s ease}
+.anchor-popover .ap-list li:hover{background:#EFF6FF}
+.anchor-popover .ap-list a.abs-link{color:#0066F5;font-weight:800;text-decoration:none;flex-shrink:0;min-width:62px;font-variant-numeric:tabular-nums}
+.anchor-popover .ap-list a.abs-link:hover{text-decoration:underline}
+.anchor-popover .ap-title{color:#1F2937;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.anchor-popover .ap-pot{background:#EEF3FB;color:#173B70;font-size:9px;font-weight:800;padding:2px 7px;border-radius:999px;flex-shrink:0;white-space:nowrap}
+.anchor-popover .ap-grp{font-size:9px;font-weight:800;padding:2px 7px;border-radius:999px;color:#fff;flex-shrink:0;white-space:nowrap}
+.anchor-popover .ap-grp.high{background:#4C8F57}
+.anchor-popover .ap-grp.medium{background:#0066F5}
+.anchor-popover .ap-grp.supportive{background:#D97706}
+.anchor-popover .ap-grp.low{background:#6B7280}
+.anchor-popover .ap-more{padding:8px 14px;font-size:10px;color:#64748B;font-style:italic;border-top:1px solid #EEF2F7;background:#F8FAFC}
+.anchor-popover .ap-empty{padding:16px;font-size:11px;color:#94A3B8;font-style:italic;margin:0;text-align:center}
 /* ===== Toggle switches (Show Top Potential, Show Other Scores) ===== */
 .toggle-btn{display:inline-flex;align-items:center;gap:8px;background:#fff;color:#071D49;border:1px solid #CBD5E1;border-radius:999px;padding:5px 14px 5px 7px;font-family:'Roboto','Aptos','Segoe UI',Arial,sans-serif;font-size:12px;font-weight:600;line-height:1.3;cursor:pointer;transition:all .15s ease;box-shadow:0 1px 2px rgba(15,23,42,.05);user-select:none;white-space:nowrap}
 .toggle-btn:hover{background:#EFF6FF;border-color:#93C5FD;color:#0066F5}
@@ -347,7 +451,8 @@ table.hide-other-scores .col-int{display:none!important}
 
 <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm mb-6"><h3 class="text-lg font-extrabold text-navy mb-2">Market Landscape (Worldwide)</h3><div class="grid md:grid-cols-3 gap-3 text-xs text-slate-700"><div class="rounded-xl border border-slate-200 p-3 bg-slate-50"><div class="text-[10px] font-extrabold text-slate-700 uppercase tracking-wider mb-1">Headwinds</div><ul class="list-disc pl-4 space-y-1"><li>Many HCPs do not prioritise HCV testing, do not treat, and/or wait to confirm chronicity</li><li>Low patient motivation: stigma, unstable lifestyles, insurance barriers</li></ul></div><div class="rounded-xl border border-emerald-200 p-3 bg-emerald-50"><div class="text-[10px] font-extrabold text-emerald-700 uppercase tracking-wider mb-1">Tailwinds</div><ul class="list-disc pl-4 space-y-1"><li>Acute indication in US, Canada, AU; EU approval anticipated mid-2026</li><li>POC RNA testing slowly gaining wider availability</li></ul></div><div class="rounded-xl border border-blue-200 p-3 bg-blue-50"><div class="text-[10px] font-extrabold text-blue-700 uppercase tracking-wider mb-1">Emerging Populations</div><ul class="list-disc pl-4 space-y-1"><li>New infections driven primarily by drug use and high-risk sexual behaviour</li><li>Emerging challenges in migrant and psychiatric populations</li></ul></div></div></div>
 
-<div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><h3 class="text-lg font-extrabold text-navy mb-3">Strategic Themes Used by This Dashboard</h3><p class="text-xs text-slate-600 mb-3">Each EASL abstract is scored against the 15 themes below. Click a chip to view the abstracts that map to that theme.</p><div id="strategyThemeChips" class="flex flex-wrap gap-2"></div></div>
+<div class="rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-5 shadow-sm mb-6"><div class="flex items-start justify-between gap-3 mb-3 flex-wrap"><div><h3 class="text-lg font-extrabold text-navy mb-1">Strategic Anchors → Abstract Evidence Map</h3><p class="text-xs text-slate-600 leading-relaxed mb-0">Every Strategic Imperative, Scientific Objective, prioritised Gap, 2026 Insight, and Market Landscape item from the 2027 Plan is reverse-mapped to the EASL abstracts that supply supporting evidence. Coverage % is the share of the 80-abstract dataset that touches each anchor. <strong>Click any abstract ID to open its full detail page.</strong></p></div><div id="anchorMapTotals" class="anchor-block-totals" style="flex-shrink:0"></div></div><div id="anchorEvidenceMap" class="anchor-evidence-section"></div></div>
+<div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"><div class="flex items-start justify-between gap-3 mb-3 flex-wrap"><div><h3 class="text-lg font-extrabold text-navy mb-1">15 Strategic Themes — Coverage &amp; Top Abstracts</h3><p class="text-xs text-slate-600 leading-relaxed mb-0">Each EASL abstract is scanned against the 15 themes used to score US &amp; International alignment. Use the chip row to jump to a theme card; each card lists its top 5 abstracts ranked by potential. <strong>Click an abstract ID to open its detail page.</strong></p></div></div><div id="strategyThemeChips" class="flex flex-wrap gap-2 mb-4"></div><div id="strategyThemeCards" class="tw-strategy-grid"></div></div>
 
 </section>
 </main>
@@ -531,7 +636,50 @@ function deriveStudyAttributes(d){var fullBlob=((d.fullAbstract||'')+' '+(d.obje
 DATA.forEach(function(d){d._origUsScore=d.usScore;d._origIntlScore=d.intlScore;d._origStrategicScore=d.strategicScore;d._origRelevanceGroup=d.relevanceGroup;var s=recomputeStrategy(d);d.usScore=s.usScore;d.intlScore=s.intlScore;d.strategicScore=s.strategicScore;d.relevanceGroup=s.relevanceGroup;d.matchedThemes=s.matchedThemes;d.matchedThemeKeys=s.matchedThemeKeys;d.scoringRationale=s.rationale;d.groupRationale=s.groupRationale;d._attrs=deriveStudyAttributes(d);});
 DATA.forEach(function(d){var t=Number(d.teamScore)||0,s=Number(d.strategicScore)||0,a=Number(d.aVotes)||0;d.potentialScore=Math.round(Math.min(10,(s*0.55)+(Math.min(10,t)*0.3)+(Math.min(6,a)*0.45))*10)/10;});
 function renderEASLStrategy(){var box=document.getElementById('summaryStrategy');if(!box)return;box.classList.add('tw-strategy-grid');box.classList.remove('cards');box.innerHTML=STRATEGY.themes.map(function(t){var rows=DATA.filter(function(d){return (d.matchedThemeKeys||[]).indexOf(t.key)>=0;}).sort(function(a,b){return (b.potentialScore||0)-(a.potentialScore||0);}).slice(0,5);var refs=rows.length?'<ul class="ref-list">'+rows.map(function(d){return '<li><a href="#" data-rank="'+d.rank+'" class="abs-link">'+esc(d.id)+'</a><span style="color:#475569">'+esc(trim(d.title,80))+'</span><span class="ref-pot">Pot '+fmt(d.potentialScore)+'</span></li>';}).join('')+'</ul>':'<p class="ref-empty">No matching abstracts in this dataset.</p>';return '<article class="tw-theme-card"><span class="pillar">'+esc(t.pillar)+'</span><h3>'+esc(t.name)+'</h3><p class="narrative">'+esc(t.narrative)+'</p><div class="ref-header">Top '+rows.length+' referenced abstract'+(rows.length===1?'':'s')+'</div>'+refs+'</article>';}).join('');box.querySelectorAll('.abs-link').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();openDetail(a.dataset.rank);});});}
-function renderStrategyThemeChips(){var box=document.getElementById('strategyThemeChips');if(!box)return;box.innerHTML=STRATEGY.themes.map(function(t){var n=DATA.filter(function(d){return (d.matchedThemeKeys||[]).indexOf(t.key)>=0;}).length;return '<button class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 hover:bg-blue-100 border border-slate-200 hover:border-blue-300 text-xs font-bold text-navy transition" data-theme="'+t.key+'"><span>'+esc(t.name)+'</span><span class="bg-navy text-white rounded-full px-2 py-0.5 text-[10px]">'+n+'</span></button>';}).join('');box.querySelectorAll('button[data-theme]').forEach(function(b){b.addEventListener('click',function(){var key=b.dataset.theme;showTab('summaryTab');setTimeout(function(){var card=Array.from(document.querySelectorAll('#summaryStrategy .tw-theme-card')).find(function(c){var h3=c.querySelector('h3');return h3&&STRATEGY.themes.find(function(t){return t.key===key&&t.name===h3.textContent;});});if(card){card.scrollIntoView({behavior:'smooth',block:'center'});card.style.outline='3px solid #0066F5';setTimeout(function(){card.style.outline='';},2000);}},100);});});}
-renderSummary();render();renderPotential();renderEASLStrategy();renderStrategyThemeChips();
+function renderStrategyThemeChips(){var box=document.getElementById('strategyThemeChips');if(!box)return;box.innerHTML=STRATEGY.themes.map(function(t){var n=DATA.filter(function(d){return (d.matchedThemeKeys||[]).indexOf(t.key)>=0;}).length;return '<button class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 hover:bg-blue-100 border border-slate-200 hover:border-blue-300 text-xs font-bold text-navy transition" data-theme="'+t.key+'"><span>'+esc(t.name)+'</span><span class="bg-navy text-white rounded-full px-2 py-0.5 text-[10px]">'+n+'</span></button>';}).join('');box.querySelectorAll('button[data-theme]').forEach(function(b){b.addEventListener('click',function(){var key=b.dataset.theme;var card=document.querySelector('#strategyThemeCards .tw-theme-card[data-theme-key="'+key+'"]');if(!card){showTab('summaryTab');setTimeout(function(){var c=Array.from(document.querySelectorAll('#summaryStrategy .tw-theme-card')).find(function(x){var h3=x.querySelector('h3');return h3&&STRATEGY.themes.find(function(t){return t.key===key&&t.name===h3.textContent;});});if(c){c.scrollIntoView({behavior:'smooth',block:'center'});c.classList.add('flash');setTimeout(function(){c.classList.remove('flash');},2000);}},100);return;}card.scrollIntoView({behavior:'smooth',block:'center'});card.classList.add('flash');setTimeout(function(){card.classList.remove('flash');},2000);});});}
+function buildAnchorReverseMap(){var rev={si:{},so:{},gap:{},insight:{},market:{}};Object.keys(STRATEGY_MAP).forEach(function(k){var m=STRATEGY_MAP[k];['si','so','gap','insight','market'].forEach(function(f){(m[f]||[]).forEach(function(item){if(!rev[f][item])rev[f][item]=[];if(rev[f][item].indexOf(k)<0)rev[f][item].push(k);});});});return rev;}
+function abstractsForThemeKeys(themeKeys){var rows=DATA.filter(function(d){var keys=d.matchedThemeKeys||[];return themeKeys.some(function(k){return keys.indexOf(k)>=0;});});rows.sort(function(a,b){return (b.potentialScore||0)-(a.potentialScore||0)||((b.strategicScore||0)-(a.strategicScore||0));});return rows;}
+function anchorRefList(rows,limit){if(!rows.length)return '<p class="anchor-empty">No abstracts in this dataset map to this anchor — flag for future evidence-generation planning.</p>';var top=rows.slice(0,limit||5);return '<ul class="anchor-ref-list">'+top.map(function(d){var bc=badgeClass(d.relevanceGroup);var grpShort=String(d.relevanceGroup||'').replace(' strategic priority','').replace(' priority / contextual','').replace(' / monitor','');return '<li><a href="#" data-rank="'+d.rank+'" class="abs-link">'+esc(d.id)+'</a><span class="ref-title">'+esc(trim(d.title,90))+'</span><span class="ref-grp '+bc+'">'+esc(grpShort)+'</span><span class="ref-pot">Pot '+fmt(d.potentialScore)+'</span></li>';}).join('')+'</ul>';}
+function renderAnchorMap(){var box=document.getElementById('anchorEvidenceMap');if(!box)return;var rev=buildAnchorReverseMap();var total=DATA.length;var totalsBox=document.getElementById('anchorMapTotals');var anchorTypes=[{field:'si',label:'Strategic Imperatives (SI-1 · SI-2 · SI-3)',icon:'🎯',tone:'tone-blue',bar:'bar-blue',cols:1},{field:'so',label:'Scientific Objectives (SO1 · SO2 · SO3)',icon:'🧬',tone:'tone-emerald',bar:'bar-emerald',cols:1},{field:'gap',label:'Prioritised Gaps to Close (2027+)',icon:'🧩',tone:'tone-amber',bar:'bar-amber',cols:2},{field:'insight',label:'2026 Priority Insights → 2027 Strategy',icon:'💡',tone:'tone-purple',bar:'bar-purple',cols:2},{field:'market',label:'Market Landscape Connections',icon:'🌐',tone:'tone-slate',bar:'bar-slate',cols:2}];var grandCovered=0;DATA.forEach(function(d){if((d.matchedThemeKeys||[]).length>0)grandCovered++;});if(totalsBox){totalsBox.innerHTML='<strong>'+grandCovered+'</strong> of <strong>'+total+'</strong> abstracts map to ≥1 anchor &middot; '+(total?Math.round((grandCovered/total)*100):0)+'% dataset coverage';}var html=anchorTypes.map(function(at){var items=Object.keys(rev[at.field]||{});if(!items.length)return '';items.sort(function(a,b){return abstractsForThemeKeys(rev[at.field][b]).length-abstractsForThemeKeys(rev[at.field][a]).length;});var rowsHtml=items.map(function(itemText){var themeKeys=rev[at.field][itemText];var abs=abstractsForThemeKeys(themeKeys);var pct=total?Math.round((abs.length/total)*100):0;var detailLabel=abs.length?'Show top '+Math.min(abs.length,5)+' abstract reference'+(abs.length===1?'':'s')+' ▾':'No abstracts mapped';return '<div class="anchor-item">'+'<div class="anchor-item-head">'+'<div class="anchor-item-text">'+esc(itemText)+'</div>'+'<div class="anchor-item-stat"><span class="anchor-count">'+abs.length+'</span><span class="anchor-pct">'+pct+'% dataset</span></div>'+'</div>'+'<div class="anchor-bar-bg"><div class="anchor-bar '+at.bar+'" style="width:'+pct+'%"></div></div>'+(abs.length?'<details class="anchor-details"><summary>'+detailLabel+'</summary>'+anchorRefList(abs,5)+'</details>':'<p class="anchor-empty">No abstracts mapped to this anchor in this dataset.</p>')+'</div>';}).join('');var coveredCount=items.filter(function(it){return abstractsForThemeKeys(rev[at.field][it]).length>0;}).length;return '<section class="anchor-block '+at.tone+'">'+'<header class="anchor-block-head">'+'<span class="anchor-block-icon">'+at.icon+'</span>'+'<h3>'+esc(at.label)+'</h3>'+'<span class="anchor-block-meta">'+coveredCount+' / '+items.length+' anchors with evidence</span>'+'</header>'+'<div class="anchor-list'+(at.cols===2?' cols-2':'')+'">'+rowsHtml+'</div>'+'</section>';}).filter(Boolean).join('');box.innerHTML=html;box.querySelectorAll('.abs-link').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();openDetail(a.dataset.rank);});});}
+function renderStrategyThemeCards(){var box=document.getElementById('strategyThemeCards');if(!box)return;var total=DATA.length;box.innerHTML=STRATEGY.themes.map(function(t){var rows=DATA.filter(function(d){return (d.matchedThemeKeys||[]).indexOf(t.key)>=0;}).sort(function(a,b){return (b.potentialScore||0)-(a.potentialScore||0);});var top=rows.slice(0,5);var pct=total?Math.round((rows.length/total)*100):0;var refs=top.length?'<ul class="ref-list">'+top.map(function(d){return '<li><a href="#" data-rank="'+d.rank+'" class="abs-link">'+esc(d.id)+'</a><span style="color:#475569">'+esc(trim(d.title,80))+'</span><span class="ref-pot">Pot '+fmt(d.potentialScore)+'</span></li>';}).join('')+'</ul>':'<p class="ref-empty">No matching abstracts in this dataset.</p>';return '<article class="tw-theme-card" data-theme-key="'+t.key+'"><span class="pillar">'+esc(t.pillar)+'</span><h3>'+esc(t.name)+'</h3><p class="narrative">'+esc(t.narrative)+'</p><div class="theme-coverage"><div class="theme-cov-bar-bg"><div class="theme-cov-bar" style="width:'+pct+'%"></div></div><div class="theme-cov-label"><span>Dataset coverage</span><span style="color:#071D49">'+rows.length+' / '+total+' &middot; '+pct+'%</span></div></div><div class="ref-header">Top '+top.length+' referenced abstract'+(top.length===1?'':'s')+'</div>'+refs+'</article>';}).join('');box.querySelectorAll('.abs-link').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();openDetail(a.dataset.rank);});});}
+var STATIC_ANCHORS=[
+{match:'Differentiate Mavyret as the treatment of choice for urgency to cure',themeKeys:['acuteGP','reinfection','svrEndpoint'],label:'SI-1 (International) — Differentiate Mavyret on urgency to cure',tone:'blue'},
+{match:'Differentiate on Speed to Cure with 8 Weeks + Acute',themeKeys:['acuteGP','reinfection','svrEndpoint'],label:'SI-1 (USA) — Speed to Cure with 8 Weeks + Acute',tone:'blue'},
+{match:'Accelerate the Adoption of Test',themeKeys:['testTreat','nonSpecialist','prison','innovationAI'],label:'SI-2 (US & Intl) — Accelerate Adoption of Test & Treat',tone:'blue'},
+{match:'Reignite Urgency Toward Elimination',themeKeys:['value','elimination','pwid','msm','migrants'],label:'SI-3 (International) — Reignite Urgency Toward Elimination',tone:'blue'},
+{match:'Reignite the Drive Toward Elimination',themeKeys:['value','elimination','pwid','msm'],label:'SI-3 (USA) — Reignite the Drive Toward Elimination',tone:'blue'},
+{match:'Increase awareness of the value of initiating an 8-week treatment',themeKeys:['acuteGP','ddiSafety','svrEndpoint','reinfection','mentalHealth'],label:'SO1 — Awareness of 8-week treatment value (US & Intl)',tone:'emerald'},
+{match:'Simplify the HCV care cascade by advancing Test',themeKeys:['testTreat','nonSpecialist','prison','innovationAI'],label:'SO2 — Simplify the HCV care cascade via Test & Treat (US & Intl)',tone:'emerald'},
+{match:'Elevate the key drivers of HCV elimination',themeKeys:['value','elimination','pwid','msm','migrants'],label:'SO3 — Drivers of HCV elimination (outcomes, transmission, cost) (US & Intl)',tone:'emerald'},
+{match:'Limited societal, clinical and economic outcomes data',themeKeys:['testTreat','value','reinfection','elimination'],label:'Gap 1 — T&T value at diagnosis (societal/clinical/economic)',tone:'amber'},
+{match:'Insufficient RWE data on DDI-related safety',themeKeys:['ddiSafety','mentalHealth'],label:'Gap 2 — RWE on G/P DDI safety with concomitant meds',tone:'amber'},
+{match:'Lack of evolving data on scalable, sustainable Test',themeKeys:['testTreat','nonSpecialist','prison'],label:'Gap 3 — Scalable T&T MOC with non-liver/non-ID specialists',tone:'amber'},
+{match:'Lack of data on PK and safety of G/P in pregnancy',themeKeys:['pregnancy'],label:'Gap 4 — PK & safety of G/P in pregnancy',tone:'amber'},
+{match:'Lack of local epidemiologic data',themeKeys:['elimination'],label:'Gap 5 — Local epi for IOI model & elimination targets',tone:'amber'},
+{match:'MSM / sexual transmission',themeKeys:['msm'],label:'2026 Insight #1 — MSM / sexual transmission resonance',tone:'purple'},
+{match:'SVR4 as a cure endpoint',themeKeys:['svrEndpoint'],label:'2026 Insight #2 — SVR4 as a cure endpoint',tone:'purple'},
+{match:'Acute launch confidence',themeKeys:['acuteGP','reinfection','testTreat'],label:'2026 Insight #3 — Acute launch confidence in G/P',tone:'purple'},
+{match:'HCV in pregnancy demand',themeKeys:['pregnancy'],label:'2026 Insight #4 — HCV pregnancy data demand',tone:'purple'},
+{match:'RW safety with concomitant meds',themeKeys:['ddiSafety','mentalHealth'],label:'2026 Insight #5 — RW safety with concomitant meds',tone:'purple'},
+{match:'Lack of Progress Toward Elimination',themeKeys:['elimination','testTreat','reinfection','acuteGP'],label:'Future Narrative — Unmet Need: Lack of Progress Toward Elimination',tone:'blue'},
+{match:'Potent PI Backbone',themeKeys:['acuteGP','svrEndpoint'],label:'Future Narrative — MOA: Potent PI Backbone (8-week pangenotypic)',tone:'blue'},
+{match:'Shortest Path to Cure',themeKeys:['acuteGP','pwid','pregnancy','reinfection','svrEndpoint'],label:'Future Narrative — Efficacy: Shortest Path to Cure',tone:'blue'},
+{match:'Certainty in Acute & Chronic HCV',themeKeys:['ddiSafety','pregnancy','mentalHealth','acuteGP'],label:'Future Narrative — Safety: Certainty in Acute & Chronic HCV',tone:'blue'},
+{match:'Freedom from HCV Sooner',themeKeys:['value','testTreat','elimination'],label:'Future Narrative — Value: Freedom from HCV Sooner',tone:'blue'},
+{match:'Many HCPs do not prioritise HCV testing',themeKeys:['testTreat','nonSpecialist','svrEndpoint'],label:'Market Landscape — Headwinds',tone:'slate'},
+{match:'Acute indication in US, Canada, AU',themeKeys:['acuteGP','innovationAI','testTreat'],label:'Market Landscape — Tailwinds',tone:'slate'},
+{match:'New infections driven primarily by drug use',themeKeys:['pwid','msm','migrants','mentalHealth'],label:'Market Landscape — Emerging Populations',tone:'slate'}
+];
+function findStaticAnchorContainer(matchText){var root=document.getElementById('strategyTab');if(!root)return null;var preferred=Array.from(root.querySelectorAll('li, td')).filter(function(el){return el.textContent.indexOf(matchText)>=0;});if(preferred.length)return preferred.sort(function(a,b){return a.textContent.length-b.textContent.length;})[0];var cards=Array.from(root.querySelectorAll('.rounded-xl')).filter(function(el){return el.textContent.indexOf(matchText)>=0;});if(cards.length)return cards.sort(function(a,b){return a.textContent.length-b.textContent.length;})[0];return null;}
+var _currentPopover=null;
+function closeAnchorPopover(){if(_currentPopover){_currentPopover.remove();_currentPopover=null;}}
+function showAnchorPopover(triggerEl,themeKeys,label,tone){closeAnchorPopover();var abs=abstractsForThemeKeys(themeKeys);var top=abs.slice(0,12);var themeNames=themeKeys.map(function(k){var t=STRATEGY.themes.find(function(x){return x.key===k;});return t?t.name:k;});var listHtml=abs.length?'<ul class="ap-list">'+top.map(function(d){var bc=badgeClass(d.relevanceGroup);var grpShort=String(d.relevanceGroup||'').split(' ')[0];return '<li><a href="#" class="abs-link" data-rank="'+d.rank+'">'+esc(d.id)+'</a><span class="ap-title" title="'+esc(d.title)+'">'+esc(trim(d.title,90))+'</span><span class="ap-grp '+bc+'">'+esc(grpShort)+'</span><span class="ap-pot">Pot '+fmt(d.potentialScore)+'</span></li>';}).join('')+'</ul>'+(abs.length>top.length?'<div class="ap-more">+'+(abs.length-top.length)+' more abstract'+((abs.length-top.length)===1?'':'s')+' map to this anchor — see the Anchor Evidence Map below for the full list.</div>':''):'<p class="ap-empty">No abstracts in this dataset map to this anchor — flag for evidence-generation planning.</p>';var pop=document.createElement('div');pop.className='anchor-popover';pop.innerHTML='<div class="ap-head"><div class="ap-label">'+esc(label)+'</div><div class="ap-meta">'+abs.length+' match'+(abs.length===1?'':'es')+'</div><button type="button" class="ap-close" aria-label="Close popover">×</button></div><div class="ap-themes"><span class="ap-themes-label">Themes:</span>'+themeNames.map(function(n){return '<span class="ap-theme-pill">'+esc(n)+'</span>';}).join('')+'</div>'+listHtml;document.body.appendChild(pop);var rect=triggerEl.getBoundingClientRect();var popW=Math.min(480,window.innerWidth-16);var top_y=rect.bottom+window.scrollY+6;var left=rect.left+window.scrollX;var maxLeft=window.scrollX+window.innerWidth-popW-8;if(left>maxLeft)left=maxLeft;if(left<8)left=8;pop.style.top=top_y+'px';pop.style.left=left+'px';_currentPopover=pop;pop.querySelector('.ap-close').addEventListener('click',closeAnchorPopover);pop.querySelectorAll('.abs-link').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();closeAnchorPopover();openDetail(a.dataset.rank);});});}
+function injectAnchorBadge(container,themeKeys,label,tone){if(!container)return;if(container.querySelector(':scope > .anchor-inline-badge-wrap'))return;var abs=abstractsForThemeKeys(themeKeys);var n=abs.length;var pct=DATA.length?Math.round((n/DATA.length)*100):0;var btn=document.createElement('button');btn.type='button';btn.className='anchor-inline-badge tone-'+(tone||'blue')+(n===0?' is-empty':'');btn.dataset.themeKeys=themeKeys.join(',');btn.dataset.label=label;btn.innerHTML='<span class="ab-count">'+n+'</span><span class="ab-text">'+(n===1?'abstract':'abstracts')+' &middot; '+pct+'%</span><span class="ab-arrow">▾</span>';btn.title=(n?'Click to view '+n+' matching abstract'+(n===1?'':'s'):'No abstracts in this dataset map to this anchor')+' — '+label;btn.addEventListener('click',function(e){e.stopPropagation();showAnchorPopover(btn,themeKeys,label,tone);});var wrap=document.createElement('div');wrap.className='anchor-inline-badge-wrap';wrap.appendChild(btn);container.appendChild(wrap);}
+function injectInlineAnchorBadges(){STATIC_ANCHORS.forEach(function(cfg){var c=findStaticAnchorContainer(cfg.match);if(c)injectAnchorBadge(c,cfg.themeKeys,cfg.label,cfg.tone);});}
+document.addEventListener('click',function(e){if(_currentPopover&&!_currentPopover.contains(e.target)&&!e.target.closest('.anchor-inline-badge')){closeAnchorPopover();}});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAnchorPopover();});
+window.addEventListener('resize',closeAnchorPopover);
+document.querySelectorAll('.tabbtn').forEach(function(b){b.addEventListener('click',closeAnchorPopover);});
+renderSummary();render();renderPotential();renderEASLStrategy();renderStrategyThemeChips();renderAnchorMap();renderStrategyThemeCards();injectInlineAnchorBadges();
 })();
 </script></body></html>
