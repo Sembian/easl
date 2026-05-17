@@ -3,12 +3,13 @@
 <meta name="googlebot" content="noindex">
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>2026 EASL HCV Abstracts Dashboard</title>
-<script>(function(){try{if(localStorage.getItem('easl_dashboard_auth')!=='1'){document.documentElement.classList.add('locked-init');}}catch(e){document.documentElement.classList.add('locked-init');}})();</script>
+<script>(function(){try{if(localStorage.getItem('easl_dashboard_auth')==='1'){document.documentElement.classList.add('auth-ready');}else{document.documentElement.classList.add('locked-init');}}catch(e){document.documentElement.classList.add('locked-init');}})();</script>
 <style>
 html.locked-init body{overflow:hidden!important}
 html.locked-init body > *:not(#loginOverlay){visibility:hidden!important}
 #loginOverlay{position:fixed;inset:0;z-index:100;background:linear-gradient(135deg,#071D49 0%,#0F2D6B 50%,#0066F5 100%);display:flex;align-items:center;justify-content:center;padding:24px;font-family:'Roboto','Aptos','Segoe UI',Arial,sans-serif;visibility:visible!important}
 #loginOverlay.hidden{display:none!important}
+html.auth-ready #loginOverlay{display:none!important}
 #loginOverlay .login-card{background:#fff;border-radius:18px;box-shadow:0 30px 80px rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.05);max-width:430px;width:100%;padding:36px;animation:loginFadeIn .35s ease}
 #loginOverlay .login-logo{display:block;width:auto;height:64px;max-width:100%;margin:0 auto 22px;object-fit:contain}
 #loginOverlay .login-icon{width:60px;height:60px;background:linear-gradient(135deg,#0066F5,#071D49);border-radius:14px;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 8px 22px rgba(7,29,73,.30)}
